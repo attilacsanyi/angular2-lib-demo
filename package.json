@@ -5,13 +5,19 @@
   "angular-cli": {},
   "scripts": {
     "lite-server": "lite-server -c demo/bs-config.json",
-    "link": "ngm link -p src && npm link module-b",
-    "build": "ngm build -p src",
+
+    "build": "ng build",
+    "build-prod": "ng build --prod",
     "start": "ng serve --host 0.0.0.0 --port 5002 --live-reload-port 49153",
     "lint": "tslint \"**/*.ts\" --fix --type-check -e \"node_modules/**\" -e \"dist/**\" -e \"temp/**\"",
-    "test": "ng test",
+    "test": "ng test --watch=false",
+    "tdd": "ng test",
     "pree2e": "webdriver-manager update",
-    "e2e": "protractor"
+    "e2e": "protractor",
+
+    "link": "ngm link -p src && npm link module-b",
+    "ngm-b": "ngm build -p src",
+    "ngm-b-w": "ngm build -w -p src"
   },
   "private": true,
   "dependencies": {
