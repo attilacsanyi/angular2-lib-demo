@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-// TODO: this import is not working
-// import { ModuleB } from 'module-b/module-b';
+// ModuleB reference
+import { ModuleB } from 'module-b';
 
 import { AppComponent } from './app.component';
 
@@ -16,7 +16,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    // FeatureAModule
+    ModuleB
   ],
   providers: [],
   bootstrap: [AppComponent]
