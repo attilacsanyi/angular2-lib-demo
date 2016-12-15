@@ -15,7 +15,7 @@
     "test-coverage": "ng test -sr -cc",
     "pree2e": "webdriver-manager update",
     "e2e": "protractor",
-    "link": "ngm link -p src && npm link module-b",
+    "link": "ngm link -p src --here",
     "ngm-b": "ngm build -p src",
     "ngm-b-w": "ngm build -p src --watch --skip-bundles",
     "publish": "run-s ngm-b link"
