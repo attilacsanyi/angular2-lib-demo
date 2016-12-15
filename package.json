@@ -18,7 +18,8 @@
     "link": "ngm link -p src --here",
     "ngm-b": "ngm build -p src",
     "ngm-b-w": "ngm build -p src --watch --skip-bundles",
-    "publish": "run-s ngm-b link"
+    "publish": "run-s ngm-b link",
+    "postinstall": "run-s publish"
   },
   "private": true,
   "dependencies": {
