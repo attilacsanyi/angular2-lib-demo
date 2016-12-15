@@ -31,7 +31,6 @@
   ],
   "files": [
     "../scripts/typings.d.ts",
-    "./module-b.ts",
     "./index.ts"
   ],
   "angularCompilerOptions": {
