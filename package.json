@@ -15,7 +15,7 @@
     "test-coverage": "ng test -sr -cc",
     "pree2e": "webdriver-manager update",
     "e2e": "protractor",
-    "link": "ngm link -p src && npm link module-b",
+    "link": "ngm link -p src --here",
     "ngm-b": "ngm build -p src",
     "ngm-b-w": "ngm build -p src --watch --skip-bundles",
     "publish": "run-s ngm-b link"
@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "@angular/compiler-cli": "2.2.3",
+    "@angular/tsc-wrapped": "0.4.0",
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.42",
     "@types/webpack": "2.0.0",
@@ -51,7 +52,7 @@
     "karma-jasmine": "^1.0.2",
     "karma-remap-istanbul": "^0.2.1",
     "lite-server": "2.2.2",
-    "ngm-cli": "0.3.6",
+    "ngm-cli": "0.3.7",
     "npm-run-all": "3.1.2",
     "protractor": "4.0.9",
     "ts-node": "1.2.1",
