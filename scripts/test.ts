@@ -1,4 +1,4 @@
-import './polyfills.ts';
+import '../demo/src/polyfills.ts';
 
 import 'zone.js/dist/long-stack-trace-zone';
 import 'zone.js/dist/proxy.js';
@@ -17,16 +17,20 @@ declare var __karma__: any;
 declare var require: any;
 
 // Prevent Karma from running prematurely.
-__karma__.loaded = function () {};
+__karma__.loaded = Function.prototype;
 
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(
   BrowserDynamicTestingModule,
   platformBrowserDynamicTesting()
 );
-// Then we find all the tests.
-let context = require.context('./', true, /\.spec\.ts/);
+// Then we find all the tests for demo.
+let context = require.context('../demo/src', true, /\.spec\.ts/);
 // And load the modules.
 context.keys().map(context);
+
+// Then we find all the tests for module.
+let context2 = require.context('../src/spec', true, /\.spec\.ts/);
+context2.keys().map(context2);
 // Finally, start Karma to run the tests.
 __karma__.start();

@@ -9,7 +9,7 @@
     "build-prod": "ng build --prod --aot",
     "start": "ng serve --aot --host 0.0.0.0 --port 5002 --live-reload-port 49153",
     "lint": "tslint \"**/*.ts\" --fix --type-check -e \"node_modules/**\" -e \"dist/**\" -e \"temp/**\"",
-    "pretest": "run-s lint build link",
+    "pretest": "run-s lint publish",
     "test": "ng test -sr",
     "tdd": "ng test",
     "test-coverage": "ng test -sr -cc",
