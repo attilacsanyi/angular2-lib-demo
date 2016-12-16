@@ -3,10 +3,10 @@
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.22-1.
 
 ## Usage
-`npm i` (just once with module publish)
-`npm start` (dev live reload)
-`npm run ngm-b-w` (bundle rebuild)
-`npm run tdd` (tdd live reload)
+1. `npm i` (just once with module publish)
+1. `npm start` (dev live reload)
+1. `npm run ngm-b-w` (bundle rebuild)
+1. `npm run tdd` (tdd live reload)
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
