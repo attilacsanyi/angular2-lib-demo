@@ -1,5 +1,4 @@
-/* tslint:disable:no-unused-variable */
-
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TestBed, async } from '@angular/core/testing';
 import { FeatureAComponent } from '../';
 
@@ -12,6 +11,7 @@ describe('FeatureAComponent', () => {
       declarations: [
         FeatureAComponent
       ],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA] // for Material components
     });
     TestBed.compileComponents();
   });

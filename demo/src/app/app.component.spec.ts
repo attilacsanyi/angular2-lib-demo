@@ -9,7 +9,7 @@ describe('AppComponent', () => {
       imports: [ModuleB]
       declarations: [
         AppComponent
-      ],
+      ]
     });
     TestBed.compileComponents();
   });

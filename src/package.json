@@ -2,11 +2,17 @@
   "name": "module-b",
   "version": "0.0.1",
   "dependencies": {
+    "@angular/material": "*",
+    "hammerjs": "*"
+  },
+  "devDependencies": {
+    "@types/hammerjs": "*"
   },
   "peerDependencies": {
     "@angular/common": "*",
     "@angular/compiler": "*",
     "@angular/core": "*",
-    "@angular/forms": "*"
+    "@angular/forms": "*",
+    "@angular/http": "*"
   }
 }

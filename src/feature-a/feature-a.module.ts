@@ -1,12 +1,17 @@
-import { CommonModule } from '@angular/common';
 import { NgModule, ModuleWithProviders } from '@angular/core';
-
+import { SharedModule } from '../shared';
 import { FeatureAComponent } from './feature-a.component';
 
 @NgModule({
-  imports: [CommonModule],
-  declarations: [FeatureAComponent],
-  exports: [FeatureAComponent]
+  imports: [
+    SharedModule.forRoot(),
+  ],
+  declarations: [
+    FeatureAComponent
+  ],
+  exports: [
+    FeatureAComponent,
+  ]
 })
 export class FeatureAModule {
   public static forRoot(): ModuleWithProviders {
